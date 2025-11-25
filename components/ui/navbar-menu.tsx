@@ -1,16 +1,14 @@
 "use client";
 import React from "react";
-import { motion } from "motion/react";
+import { motion, Transition } from "motion/react";
 
 
 
-const transition = {
+const transition: Transition = {
   type: "spring",
   mass: 0.5,
-  damping: 11.5,
+  damping: 12,
   stiffness: 100,
-  restDelta: 0.001,
-  restSpeed: 0.001,
 };
 
 export const MenuItem = ({
